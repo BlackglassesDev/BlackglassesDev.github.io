@@ -9,9 +9,9 @@
 
 :root {
     /* Color Palette - ปรับตามธีมโปรเจกต์ */
-    --primary-color: #007bff;
-    --secondary-color: #6c757d;
-    --accent-color: #28a745;
+    --primary-color: #18038d;
+    --secondary-color: #a8b3a9;
+    --accent-color: #12f355;
     --danger-color: #dc3545;
     --light-color: #f8f9fa;
     --dark-color: #343a40;
@@ -128,7 +128,7 @@ body {
    =========================== */
 .hero-section {
     background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
-    color: white;
+    color: var(--light-color);
     text-align: center;
     padding: 6rem 0;
     margin-bottom: 4rem;
@@ -141,7 +141,7 @@ body {
 }
 
 .hero-description {
-    font-size: 1.25rem;
+    font-size: 1rem;
     margin-bottom: 2rem;
     max-width: 700px;
     margin-left: auto;
@@ -165,13 +165,13 @@ section h2 {
     font-size: 2.5rem;
     text-align: center;
     margin-bottom: 1rem;
-    color: var(--dark-color);
+    color: var(--light-color);
 }
 
 .section-description {
     text-align: center;
     font-size: 1.1rem;
-    color: var(--secondary-color);
+    color: var(--text-color);
     margin-bottom: 3rem;
     max-width: 700px;
     margin-left: auto;
@@ -212,7 +212,7 @@ section h2 {
 }
 
 .feature-card p {
-    color: var(--secondary-color);
+    color: var(--dark-color);
 }
 
 /* How It Works Section */
@@ -271,17 +271,17 @@ section h2 {
 
 .team-member h3 {
     margin-bottom: 0.5rem;
-    color: var(--dark-color);
+    color: var(--primary-color);
 }
 
 .team-member .role {
-    color: var(--primary-color);
+    color: var(--accent-color);
     font-weight: 600;
     margin-bottom: 0.25rem;
 }
 
 .team-member .student-id {
-    color: var(--secondary-color);
+    color: var(--dark-color);
     font-size: 0.9rem;
 }
 
@@ -289,7 +289,7 @@ section h2 {
    FOOTER
    =========================== */
 .main-footer {
-    background-color: var(--dark-color);
+    background-color: var(--text-color);
     color: white;
     padding: 3rem 0 1rem;
     margin-top: 4rem;
@@ -306,7 +306,7 @@ section h2 {
 .footer-links h4,
 .footer-contact h4 {
     margin-bottom: 1rem;
-    color: var(--primary-color);
+    color: var(--accent-color);
 }
 
 .footer-links ul {
@@ -320,7 +320,7 @@ section h2 {
 }
 
 .footer-links a:hover {
-    color: var(--primary-color);
+    color: var(--accent-color);
 }
 
 .footer-bottom {
