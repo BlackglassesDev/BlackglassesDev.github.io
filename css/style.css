@@ -1,6 +1,6 @@
 /* ===========================
-   CSS Reset & Base Styles
-   =========================== */
+    CSS Reset & Base Styles
+    =========================== */
 * {
     margin: 0;
     padding: 0;
@@ -8,26 +8,33 @@
 }
 
 :root {
-    /* Color Palette - ปรับตามธีมโปรเจกต์ */
-    --primary-color: #18038d;
-    --secondary-color: #a8b3a9;
-    --accent-color: #12f355;
-    --danger-color: #dc3545;
-    --light-color: #f8f9fa;
-    --dark-color: #343a40;
-    --text-color: #212529;
+    /* =================================
+       Color Palette: Unique & Energetic (Purple Theme)
+       ================================= */
+    --primary-color: #5A189A;    /* ม่วงเข้มจัด (Deep Purple - Brand/Trust) */
+    --secondary-color: #9D4EDD;  /* ม่วงสด (Vibrant Purple - Highlight/Energy) */
+    --accent-color: #FF70A6;     /* ชมพู/บานเย็น (Pink/Fuchsia - Focus/Action) */
+    --danger-color: #E53935;     /* แดง (Error/Danger) */
+    --light-color: #FFFFFF;      /* สีขาวบริสุทธิ์ */
+    --soft-light-color: #F8F9FA; /* สีขาวนุ่มนวล (Soft Background) */
+    --background-alt: #EBE9F5;   /* สีพื้นหลังรอง (Very Light Lavender) */
+    --dark-color: #2D004D;       /* ม่วงเข้มเกือบดำ (Footer/Major Headings) */
+    --text-color: #3C4A60;       /* ข้อความทั่วไป (Dark Blue-Grey) */
     
-    /* Typography */
+    /* Typography - ปรับฟอนต์ให้ทันสมัยและมีน้ำหนักมากขึ้น */
     --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     --font-size-base: 16px;
     --font-size-lg: 1.25rem;
-    --font-size-xl: 2rem;
+    --font-size-xl: 2.5rem; 
     
     /* Spacing */
     --spacing-unit: 1rem;
-    --container-width: 1200px;
+    --container-width: 1280px; 
 }
 
+/* ===========================
+    GLOBAL 3D & PERSPECTIVE SETTINGS
+    =========================== */
 html {
     font-size: var(--font-size-base);
     scroll-behavior: smooth;
@@ -37,7 +44,8 @@ body {
     font-family: var(--font-primary);
     line-height: 1.6;
     color: var(--text-color);
-    background-color: var(--light-color);
+    background-color: var(--soft-light-color); 
+    perspective: 1500px; /* เพิ่มมิติเชิงลึกสำหรับ 3D Effect */
 }
 
 /* Container */
@@ -47,48 +55,81 @@ body {
     padding: 0 calc(var(--spacing-unit) * 2);
 }
 
+/* Headings - ปรับน้ำหนักและสี */
+h1, h2, h3 {
+    color: var(--dark-color);
+    font-weight: 800; 
+}
+
+section h2 {
+    font-size: var(--font-size-xl);
+    text-align: center;
+    margin-bottom: 0.5rem;
+    color: var(--dark-color);
+}
+
+.section-description {
+    text-align: center;
+    font-size: var(--font-size-lg); 
+    color: var(--text-color);
+    margin-bottom: 3rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* Buttons */
 .btn {
     display: inline-block;
-    padding: 0.75rem 1.5rem;
+    padding: 0.85rem 1.8rem; 
     font-size: 1rem;
     font-weight: 600;
     text-align: center;
     text-decoration: none;
     border: none;
-    border-radius: 5px;
+    border-radius: 50px; 
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
 .btn-primary {
-    background-color: var(--primary-color);
+    background-color: var(--primary-color); 
     color: white;
+    box-shadow: 0 6px 15px rgba(90, 24, 154, 0.4); 
+    animation: softPulse 2s ease-in-out 3; /* Animation เมื่อโหลด */
 }
 
 .btn-primary:hover {
-    background-color: #0056b3;
+    background-color: #451378; 
     transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 20px rgba(90, 24, 154, 0.6);
 }
 
 .btn-secondary {
     background-color: transparent;
-    color: var(--primary-color);
-    border: 2px solid var(--primary-color);
+    color: var(--accent-color);
+    border: 2px solid var(--accent-color);
+    box-shadow: 0 2px 5px rgba(255, 112, 166, 0.2);
 }
 
 .btn-secondary:hover {
-    background-color: var(--primary-color);
+    background-color: var(--accent-color);
     color: white;
+    box-shadow: 0 4px 10px rgba(255, 112, 166, 0.4);
+}
+
+/* Interactive Press Down Effect */
+.btn:active {
+    transform: translateY(2px);
+    box-shadow: none !important;
 }
 
 /* ===========================
-   HEADER
-   =========================== */
+    HEADER
+    =========================== */
 .main-header {
-    background-color: white;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: var(--light-color); 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08); 
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -102,8 +143,9 @@ body {
 }
 
 .logo h1 {
-    font-size: 1.5rem;
-    color: var(--primary-color);
+    font-size: 2rem; 
+    font-weight: 900;
+    color: var(--primary-color); 
 }
 
 .main-nav ul {
@@ -116,138 +158,188 @@ body {
     text-decoration: none;
     color: var(--text-color);
     font-weight: 500;
-    transition: color 0.3s;
+    transition: color 0.3s, border-bottom 0.3s;
 }
 
 .main-nav a:hover {
-    color: var(--primary-color);
+    color: var(--secondary-color); 
+    border-bottom: 3px solid var(--secondary-color); 
+    padding-bottom: 5px;
 }
 
 /* ===========================
-   HERO SECTION
-   =========================== */
+    HERO SECTION - จัดวางแบบ WOW! และ 3D
+    =========================== */
 .hero-section {
-    background: linear-gradient(135deg, var(--accent-color), var(--secondary-color));
-    color: var(--light-color);
-    text-align: center;
-    padding: 6rem 0;
+    background: linear-gradient(150deg, var(--secondary-color) 0%, var(--primary-color) 100%); 
+    color: white; 
+    text-align: left; 
+    padding: 8rem 0; 
     margin-bottom: 4rem;
+    position: relative;
+    overflow: hidden;
 }
 
+/* 2 Column Layout สำหรับหน้าจอใหญ่ */
+.hero-content-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    text-align: left;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-visual {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+    animation: subtleFloat 4s ease-in-out infinite; /* Animation ลอยขึ้นลง */
+}
+
+/* 3D Transform สำหรับ Mockup */
+.placeholder-device {
+    width: 100%;
+    max-width: 500px;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.15); 
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.4); /* เงาลึก */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border: 3px solid white;
+    
+    /* 3D Transform เริ่มต้น */
+    transform: rotateY(-10deg) rotateX(5deg) scale(1); 
+    transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94); 
+}
+
+/* Effect เมื่อ Hover บน Hero Section */
+.hero-section:hover .placeholder-device {
+    transform: rotateY(-5deg) rotateX(2deg) scale(1.02); 
+}
+
+
 .hero-title {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    font-weight: 700;
+    font-size: 3.5rem; 
+    margin-bottom: 1.5rem;
+    font-weight: 900;
+    color: white; 
 }
 
 .hero-description {
-    font-size: 1rem;
-    margin-bottom: 2rem;
-    max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
+    font-size: 1.25rem;
+    margin-bottom: 2.5rem;
+    max-width: none; 
+    color: #F8F9FA; 
 }
 
 .hero-cta {
-    display: flex;
+    justify-content: start; 
+    display: flex; 
     gap: 1rem;
-    justify-content: center;
 }
 
+
 /* ===========================
-   SECTIONS
-   =========================== */
+    SECTIONS
+    =========================== */
 section {
     padding: 4rem 0;
 }
 
-section h2 {
-    font-size: 2.5rem;
-    text-align: center;
-    margin-bottom: 1rem;
-    color: var(--primary-color);
+.problem-section, .how-section {
+    background-color: var(--light-color); 
 }
-
-.section-description {
-    text-align: center;
-    font-size: 1.1rem;
-    color: var(--text-color);
-    margin-bottom: 3rem;
-    max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
+.about-section, .contact-section, .features-section {
+    background-color: var(--background-alt); 
 }
 
 /* Features Grid */
 .features-grid {
-    display: grid;
+    display: grid; 
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+    gap: 2.5rem;
     margin-top: 3rem;
 }
 
+/* FEATURE CARDS: Interactive 3D Tilt */
 .feature-card {
-    background: white;
+    background: var(--light-color);
     padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 15px; 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08); 
+    border-top: 5px solid var(--secondary-color); 
+    text-align: left; 
+    
+    transform-style: preserve-3d; /* 3D Style */
+    transform: translateZ(0); 
+    transition: transform 0.4s ease-out, box-shadow 0.4s ease-out;
 }
 
+/* 3D Tilt Effect เมื่อนำเมาส์ไปชี้ */
 .feature-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(-10px) rotateX(2deg) rotateY(2deg); 
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); 
 }
 
 .feature-icon {
-    font-size: 3rem;
-    margin-bottom: 1rem;
+    font-size: 3.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--accent-color); 
 }
 
 .feature-card h3 {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     margin-bottom: 0.5rem;
     color: var(--primary-color);
 }
 
-.feature-card p {
-    color: var(--dark-color);
-}
-
 /* How It Works Section */
 .steps {
-    display: flex;
+    display: flex; 
     justify-content: space-around;
-    gap: 2rem;
+    gap: 3rem;
     margin-top: 3rem;
 }
 
 .step {
-    flex: 1;
+    flex: 1; 
     text-align: center;
+    padding: 1.5rem;
+    background-color: var(--light-color);
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
 }
 
 .step-number {
     display: inline-block;
-    width: 60px;
-    height: 60px;
-    line-height: 60px;
-    border-radius: 50%;
-    background-color: var(--primary-color);
-    color: white;
-    font-size: 1.5rem;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 10px; 
+    background-color: var(--accent-color); 
+    color: white; 
+    font-size: 1.4rem;
     font-weight: bold;
     margin-bottom: 1rem;
 }
 
 .step h3 {
-    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
 }
 
 /* Team Section */
 .team-grid {
-    display: grid;
+    display: grid; 
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 2rem;
     margin-top: 3rem;
@@ -255,10 +347,15 @@ section h2 {
 
 .team-member {
     text-align: center;
-    background: white;
-    padding: 1.5rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background: var(--light-color);
+    padding: 2rem 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.team-member:hover {
+    transform: scale(1.05);
 }
 
 .team-member img {
@@ -267,30 +364,41 @@ section h2 {
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 1rem;
+    border: 5px solid var(--secondary-color); 
+    transition: border-color 0.3s;
+}
+.team-member:hover img {
+    border: 5px solid var(--accent-color);
 }
 
 .team-member h3 {
     margin-bottom: 0.5rem;
-    color: var(--primary-color);
+    color: var(--dark-color);
 }
 
 .team-member .role {
-    color: var(--accent-color);
-    font-weight: 600;
+    color: var(--primary-color); 
+    font-weight: 700;
     margin-bottom: 0.25rem;
 }
 
 .team-member .student-id {
-    color: var(--dark-color);
+    color: var(--text-color);
     font-size: 0.9rem;
 }
 
+/* Contact/CTA Section */
+.contact-section {
+    background-color: var(--background-alt); 
+    text-align: center;
+}
+
 /* ===========================
-   FOOTER
-   =========================== */
+    FOOTER
+    =========================== */
 .main-footer {
-    background-color: var(--text-color);
-    color: white;
+    background-color: var(--dark-color); 
+    color: var(--background-alt); 
     padding: 3rem 0 1rem;
     margin-top: 4rem;
 }
@@ -306,7 +414,7 @@ section h2 {
 .footer-links h4,
 .footer-contact h4 {
     margin-bottom: 1rem;
-    color: var(--accent-color);
+    color: var(--accent-color); 
 }
 
 .footer-links ul {
@@ -314,13 +422,13 @@ section h2 {
 }
 
 .footer-links a {
-    color: white;
+    color: var(--background-alt);
     text-decoration: none;
     transition: color 0.3s;
 }
 
 .footer-links a:hover {
-    color: var(--accent-color);
+    color: var(--accent-color); 
 }
 
 .footer-bottom {
@@ -330,8 +438,72 @@ section h2 {
 }
 
 /* ===========================
-   RESPONSIVE DESIGN
-   =========================== */
+    KEYFRAME ANIMATION
+    =========================== */
+@keyframes softPulse {
+    0% { transform: scale(1); opacity: 0.8; }
+    50% { transform: scale(1.01); opacity: 1; }
+    100% { transform: scale(1); opacity: 0.8; }
+}
+
+@keyframes subtleFloat {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+    100% { transform: translateY(0); }
+}
+
+/* ===========================
+    RESPONSIVE DESIGN 
+    =========================== */
+/* สำหรับแท็บเล็ตและหน้าจอที่เล็กกว่า 992px */
+@media (max-width: 992px) {
+    
+    .hero-section {
+        padding: 4rem 0;
+    }
+    
+    /* Hero Section: เปลี่ยนจาก 2 คอลัมน์เป็น 1 คอลัมน์ */
+    .hero-content-wrapper {
+        flex-direction: column;
+        gap: 3rem;
+    }
+    
+    .hero-title {
+        font-size: 2.5rem;
+        text-align: center; 
+    }
+    .hero-description {
+        text-align: center; 
+    }
+    .hero-visual {
+        min-height: 250px;
+    }
+    
+    /* ยกเลิก 3D Effect ใน Responsive เพื่อประสิทธิภาพ */
+    .placeholder-device {
+        transform: none !important; 
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    }
+    .hero-section:hover .placeholder-device {
+        transform: none;
+    }
+
+    /* จัดปุ่มให้อยู่ตรงกลาง */
+    .hero-cta {
+        justify-content: center; 
+    }
+    
+    /* Features/Steps Card (ถ้ามี) ให้เนื้อหาอยู่ตรงกลาง */
+    .feature-card {
+        text-align: center;
+    }
+    .feature-icon {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* สำหรับมือถือและหน้าจอที่เล็กกว่า 768px */
 @media (max-width: 768px) {
     .main-header .container {
         flex-direction: column;
@@ -340,46 +512,35 @@ section h2 {
     
     .main-nav ul {
         flex-direction: column;
-        gap: 1rem;
+        gap: 0.5rem;
         text-align: center;
     }
     
-    .hero-title {
-        font-size: 2rem;
-    }
-    
-    .hero-description {
-        font-size: 1rem;
-    }
-    
-    .hero-cta {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .features-grid {
-        grid-template-columns: 1fr;
-    }
-    
     .steps {
-        flex-direction: column;
+        flex-direction: column; 
     }
-    
-    section h2 {
-        font-size: 2rem;
+
+    section {
+        padding: 3rem 0;
     }
 }
 
+/* สำหรับมือถือที่เล็กมาก */
 @media (max-width: 480px) {
     html {
         font-size: 14px;
     }
     
     .hero-title {
-        font-size: 1.75rem;
+        font-size: 2rem;
     }
     
-    section {
-        padding: 2rem 0;
+    .hero-cta {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn {
+        width: 100%; 
     }
 }
