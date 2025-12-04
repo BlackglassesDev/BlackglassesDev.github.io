@@ -144,10 +144,19 @@ section h2 {
     align-items: center;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+}
+
 .logo h1 {
     font-size: 2rem; 
     font-weight: 700; /* ลดความหนาจาก 900 */
     color: var(--primary-color); 
+}
+
+.logo img{
+    width: 50px;
 }
 
 .main-nav ul {
