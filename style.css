@@ -179,3 +179,53 @@ body {
     color: #E0E0E0;
     margin: 25px
 }
+
+
+
+/* =============== Mobile Responsive =============== */
+@media (max-width: 768px) {
+
+    /* ลดระยะขอบของหน้าให้เหมาะกับมือถือ */
+    .second-bg {
+        margin: 0 10px 20px 10px;
+        padding: 0 10px 10px;
+    }
+
+    /* ปรับขนาดข้อความ intro */
+    .second-bg p {
+        font-size: 14px;
+        padding: 10px 0;
+    }
+
+    /* GRID ของงาน: จาก 3 คอลัมน์ → เหลือ 1 คอลัมน์บนมือถือ */
+    .work-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 20px 20px 50px;
+    }
+
+    /* การ์ดเล็กลง + ชิดซ้ายชิดขวาเต็มจอ */
+    .work-card {
+        width: 100%;
+        border-radius: 20px;
+        padding: 10px;
+    }
+
+    /* Modal ปรับเป็นเต็มหน้าจอมากขึ้น */
+    .modal-content {
+        width: 90%;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    /* Modal grid จาก 2 คอลัมน์ → 1 คอลัมน์บนมือถือ */
+    .modal-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .modal-card {
+        width: 100%;
+        padding: 10px;
+    }
+}
