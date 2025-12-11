@@ -1,17 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Total Work</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <nav class="main-nav">
-        <a href="#">Home</a>
-        <a href="#">Home</a>
-        <a href="#">Home</a>
-        <a href="#">Home</a>
-    </nav>
+
+<body id="home">
+    <header class="site-header">
+        <nav class="main-nav">
+            <!-- <div class="nav-grid"> -->
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#work">Work</a>
+            <a href="#contact">Contact</a>
+            <!-- </div> -->
+        </nav>
+    </header>
+
+    <main>
+        <header class="second-bg">
+            <h1>Welcome to Total Work<br>
+                4Bug Team
+            </h1>
+            <p>
+                หน้า Web Page นี้เป็นการทดลองทำเล่นๆและเขียนขึ้นเพื่อง่ายต่อการค้นหางานของนักศึกษากลุ่ม 4Bug <br>
+                อาจจะไม่ได้ดูสวยหรือโดดเด่นอะไร เพียงแค่เพื่อง่ายต่อการตรวจดูงานของนักศึกษาเท่านั้น
+                ทำให้ง่ายต่ออาจารย์ผู้สอน
+                และเพื่อใช้งานอื่นๆเบื้องต้นเท่านั้น
+            </p>
+        </header>
+
+        <div class="second-bg">
+            <h1 id="work">Select Week</h1>
+            <p>📚เลือกงานของแต่ละอาทิตย์ที่คุณต้องการดู<br>💻เลือกว่าจะดูงานรวมหรือแค่หน้า Web Page( index.html )</p>
+            <div class="work-grid">
+                <article class="work-card" onclick="openModal(1)">
+                    <h2>Week-1</h2>
+                    <ul>
+                        <li>Lorem ipsum dolor </li>
+                        <li>Lorem ipsum dolor </li>
+                        <li>Lorem ipsum dolor </li>
+                    </ul>
+                </article>
+
+                <article class="work-card" onclick="openModal(2)">
+                    <h2>Week-2</h2>
+                    <ul>
+                        <li>Lorem ipsum dolor </li>
+                        <li>Lorem ipsum dolor </li>
+                        <li>Lorem ipsum dolor </li>
+                    </ul>
+                </article>
+
+                <article class="work-card" onclick="openModal(3)">
+                    <h2>Week-3</h2>
+                    <ul>
+                        <li>Lorem ipsum dolor </li>
+                        <li>Lorem ipsum dolor </li>
+                        <li>Lorem ipsum dolor </li>
+                    </ul>
+                </article>
+
+                <article class="work-card" onclick="openModal(4)">
+                    <h2>Week-4</h2>
+                    <ul>
+                        <li>Lorem ipsum dolor </li>
+                        <li>Lorem ipsum dolor </li>
+                        <li>Lorem ipsum dolor </li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section>
+        <div class="second-bg" id="about">
+            <p class="about-css">
+                📚วิชา: Software Design and Development<br>
+                🙆‍♂️อาจารย์: ธนิต เกตุแก้ว<br>
+                💻Web Page By: BlackGlasses
+            </p>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div id="model" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="model-title">Popup Modal</h2>
+            <p id="m-detail">เนื้อหาในโมเดลที่ต้องการแสดง</p>
+
+            <div class="modal-grid">
+                <article class="modal-card">
+                    <a id="url-web" href="#" target="_blank">
+                        <h2>Web Page</h2>
+                        <ul>
+                            <li id="page-detail">รายละเอียดเมื่อกด</li>
+                        </ul>
+                    </a>
+                </article>
+
+                <article class="modal-card">
+                    <a id="url-git" href="#" target="_blank">
+                        <h2>GitHub</h2>
+                        <ul>
+                            <li id="git-detail">รายละเอียดเมื่อกด</li>
+                        </ul>
+                    </a>
+                </article>
+
+
+            </div>
+        </div>
 </body>
+
+<script>
+    function openModal(week) {
+        document.getElementById("model").style.display = "flex";
+
+        document.getElementById("model-title").innerText = "ไฟล์งาน : Week " + week;
+        document.getElementById("m-detail").innerText = "เลือกหน้าที่คุณต้องการไป"
+        if (week === 1) {
+            document.getElementById("url-web").href = "https://blackglassesdev.github.io/Week-1/";
+            document.getElementById("page-detail").innerText = "หน้าการทดสอบการเขียนโค้ด และแสดงหน้าเว็บ รายชื่อสมาชิกกลุ่ม";
+            document.getElementById("url-git").href = "https://github.com/BlackglassesDev/BlackglassesDev.github.io/tree/main/Week-1";
+            document.getElementById("git-detail").innerText = "มีไฟล์แสดงรวมทั้งหมด เช่น README.md ENVIRONMENT.md และอื่นๆ";
+        } else if (week === 2) {
+            document.getElementById("url-web").href = "https://blackglassesdev.github.io/Week-2/";
+            document.getElementById("page-detail").innerText = "Web Page การศึกษาจาก SRS เพื่อสร้างหน้าเว็บ";
+            document.getElementById("url-git").href = "https://github.com/BlackglassesDev/BlackglassesDev.github.io/tree/main/Week-2";
+            document.getElementById("git-detail").innerText = "มีไฟล์แสดงรวมทั้งหมด เช่น README.md SRS_Draft.md และอื่นๆ";
+        } else if (week === 3) {
+            document.getElementById("url-web").href = "https://blackglassesdev.github.io/Week-3/";
+            document.getElementById("page-detail").innerText = "แก้ Web Page โดยนำข้อมูลมาจากไฟล์ SRS ที่อาจารย์มีให้";
+            document.getElementById("url-git").href = "https://github.com/BlackglassesDev/BlackglassesDev.github.io/tree/main/Week-3";
+            document.getElementById("git-detail").innerText = "มีไฟล์แสดงรวมทั้งหมด เช่น LAB3_UseCase.md LAB3_UserStories.md และอื่นๆ";
+        } else if (week === 4) {
+            alert("เนื่องจากงานนี้เป็นงานเดี่ยว หน้าเว็บของสมาชิกแต่ละคน หรือ Github ของแต่ละคนจะนำไว้ในไฟล์ README.md ใน Week-4 ที่ Github ด้านล่างนี้");
+            document.getElementById("url-web").href = "https://blackglassesdev.github.io/Week-4/";
+            document.getElementById("page-detail").innerText = "Web Page แนะนำตนเอง";
+            document.getElementById("url-git").href = "https://github.com/BlackglassesDev/BlackglassesDev.github.io/tree/main/Week-4";
+            document.getElementById("git-detail").innerText = "มีไฟล์แสดงรวมทั้งหมด หน้าเว็บและ Github ของสมาชิกทุกคน จะอยู่ใน README.md นี้";
+        }
+    }
+
+    function closeModal() {
+        document.getElementById("model").style.display = "none";
+    }
+
+    // ปิดเมื่อคลิกพื้นที่นอกกล่อง
+    window.onclick = function (e) {
+        if (e.target.id === "model") {
+            closeModal();
+        }
+    }
+</script>
+
 </html>

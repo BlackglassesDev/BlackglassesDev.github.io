@@ -1,0 +1,181 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #E0E0E0;
+    /* ข้อความหลัก */
+    line-height: 1.6;
+    padding-top: 60px;
+}
+
+.main-nav {
+    max-width: 100%;
+    background-color: #1F1F1F;
+    margin: 0 auto;
+    padding: 10px 20px;
+    display: flex;
+    /* ใช้ Flexbox สำหรับ Navigation */
+    justify-content: space-around;
+    /* จัดเรียงลิงก์ให้มีระยะห่างเท่าๆ กัน */
+    /* ส่วนล่างนี้ใใช้เพื่อสร้างnav แบบติดจอ */
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /*  */
+    box-shadow: 0 0 10px rgba(187, 134, 252, 0.4);
+}
+
+.main-nav a {
+    color: #BB86FC;
+    /* สีม่วงอ่อน*/
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.main-nav a:hover {
+    background-color: #333333;
+    /* สีพื้นหลังเปลี่ยนเมื่อชี้ */
+}
+
+.second-bg {
+    background-color: #1F1F1F;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 0px 50px 20px 50px;
+    padding: 0px 0px 5px;
+}
+
+.second-bg h1 {
+    text-align: center;
+    padding-top: 20px;
+    color: #BB86FC;
+}
+
+.second-bg p {
+    padding: 20px 0px 10px;
+    text-align: center;
+    font-size: 18px;
+}
+
+
+.work-grid {
+    display: grid;
+    gap: 50px;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    padding: 20px 150px 90px;
+}
+
+.work-card {
+    display: flex;
+    width: auto;
+    height: auto;
+    background-color: #1F1F1F;
+    border-radius: 30px;
+    /* align-items: center; */
+    box-shadow: 0 4px 8px 3px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.work-card h2 {
+    text-align: center;
+    color: #BB86FC;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.work-card ul {
+    color: #E0E0E0;
+}
+
+.work-card:hover {
+    transform: translateY(-8px);
+    border-radius: 30px;
+    box-shadow: 0 4px 8px 3px rgba(187, 134, 252, 0.4);
+}
+
+
+.about-css {
+    color: #BB86FC;
+}
+
+/* Model PopUp By Ai */
+/* modal overlay */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(66, 66, 66, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+/* modal box */
+.modal-content {
+    background: #1F1F1F;
+    padding: 25px;
+    width: auto;
+    border-radius: 12px;
+    position: relative;
+    box-shadow: 0 4px 8px 3px rgba(187, 134, 252, 0.4);
+}
+
+.modal-content h2{
+    color: #BB86FC;
+}
+
+.close {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.modal-grid {
+    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+    gap: 50px;
+    align-items: center;
+    padding: 20px 20px 40px ;
+}
+
+.modal-card{
+    display: flex;
+    width: auto;
+    height: auto;
+    background-color: #1F1F1F;
+    gap: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 3px rgba(0, 0, 0, 0.4);
+    flex-direction: column;
+    align-items: flex-start;
+    cursor: pointer;
+}
+
+.modal-card a{
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+}
+
+.modal-card a ul{
+    display: block;
+    padding: 10px;
+    color: #E0E0E0;
+    margin: 25px
+}
