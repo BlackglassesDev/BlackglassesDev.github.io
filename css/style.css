@@ -152,13 +152,13 @@ section h2 {
 }
 
 .logo h1 {
-    font-size: 2rem; 
-    font-weight: 700; 
+    font-size: 1rem; 
+    font-weight: 400; 
     color: var(--primary-color); 
 }
 
 .logo img{
-    width: 50px;
+    width: 80px;
 }
 
 .main-nav ul {
@@ -197,7 +197,7 @@ section h2 {
 .main-nav a i {
     font-size: 1.1rem; /* ปรับขนาด Icon ให้เล็กลงอีก (จาก 1.5rem เป็น 1.1rem) */
     transition: opacity 0.3s, transform 0.3s;
-    color: var(--secondary-color); /* ใช้ Secondary Color ให้ Icon เด่น */
+    color: var(--primary-color); /* ใช้ Secondary Color ให้ Icon เด่น */
 }
 
 /* 2. Text State (ซ่อนไว้ก่อน) */
@@ -324,9 +324,9 @@ section h2 {
 .hero-title {
     font-size: 3.75rem; 
     margin-bottom: 1.5rem;
-    font-weight: 800; 
+    font-weight: 600; 
     line-height: 1.1; 
-    color: var(--primary-color); 
+    color: var(--secondary-color); 
 }
 
 .hero-description {
