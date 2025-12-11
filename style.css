@@ -184,6 +184,10 @@ body {
 
 /* =============== Mobile Responsive =============== */
 @media (max-width: 768px) {
+    .main-nav{
+        justify-content: center;
+        padding: 5px 1px;
+    }
 
     /* ลดระยะขอบของหน้าให้เหมาะกับมือถือ */
     .second-bg {
@@ -213,19 +217,24 @@ body {
 
     /* Modal ปรับเป็นเต็มหน้าจอมากขึ้น */
     .modal-content {
-        width: 90%;
-        padding: 20px;
+        width: 70%;
+        height: 70%;
+        padding-top: 50px;
         border-radius: 10px;
+
+        overflow-y: auto;
+        overflow-x: hidden;
     }
 
     /* Modal grid จาก 2 คอลัมน์ → 1 คอลัมน์บนมือถือ */
     .modal-grid {
         grid-template-columns: 1fr;
         gap: 20px;
+        justify-content: center;
+        align-items: center;
     }
 
     .modal-card {
-        width: 100%;
         padding: 10px;
     }
 }
