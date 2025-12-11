@@ -1,0 +1,648 @@
+/* ===========================
+    CSS Reset & Base Styles
+    =========================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* =================================
+       Color Palette: DARK MODE (Deep Purple Theme)
+       ================================= */
+    --primary-color: #BB86FC;    /* ม่วงสว่าง (Primary - เน้นความโดดเด่น) */
+    --secondary-color: #03DAC6;  /* ฟ้า/เขียวอ่อน (Secondary - สำหรับ Highlight/Link Hover) */
+    --accent-color: #FF70A6;     /* ชมพู/บานเย็น (Accent - CTA/Icon/Ranking) */
+    --danger-color: #CF6679;     /* แดง (Error/Danger) */
+    
+    --background-dark: #121212;  /* พื้นหลังหลัก (เกือบดำสนิท) */
+    --surface-dark: #1F1F1F;     /* พื้นหลังรอง/Card (เข้มกว่า BG เล็กน้อย) */
+    --text-light: #E0E0E0;       /* สีข้อความหลัก (ขาวอ่อน) */
+    --text-secondary-light: #B0B0B0; /* สีข้อความรอง/คำบรรยาย */
+    
+    --dark-color: #BB86FC;       
+    
+    /* Typography */
+    --font-primary: 'Inter', 'Kanit', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-size-base: 17px; 
+    --font-size-lg: 1.25rem;
+    --font-size-xl: 2.5rem; 
+    
+    /* Spacing */
+    --spacing-unit: 1rem;
+    --container-width: 1280px; 
+}
+
+/* ===========================
+    GLOBAL 3D & PERSPECTIVE SETTINGS
+    =========================== */
+html {
+    font-size: var(--font-size-base);
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-primary);
+    line-height: 1.7; 
+    color: var(--text-light); 
+    background-color: var(--background-dark); 
+    perspective: 1500px; 
+}
+
+/* Container */
+.container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 calc(var(--spacing-unit) * 2);
+}
+
+/* Headings */
+h1, h2, h3 {
+    color: var(--primary-color); 
+    font-weight: 700; 
+}
+
+section h2 {
+    font-size: var(--font-size-xl);
+    text-align: center;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+    font-weight: 700; 
+}
+
+.section-description {
+    text-align: center;
+    font-size: 1.3rem; 
+    font-weight: 500; 
+    color: var(--text-secondary-light); 
+    margin-bottom: 3rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 1rem 2.2rem; 
+    font-size: 1.1rem; 
+    font-weight: 600; 
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 50px; 
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: var(--primary-color); 
+    color: var(--background-dark); 
+    box-shadow: 0 6px 15px rgba(187, 134, 252, 0.4); 
+    animation: softPulse 2s ease-in-out 3; 
+}
+
+.btn-primary:hover {
+    background-color: #D7B3FF; 
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(187, 134, 252, 0.6);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: var(--accent-color); 
+    border: 2px solid var(--accent-color);
+    box-shadow: 0 2px 5px rgba(255, 112, 166, 0.2);
+}
+
+.btn-secondary:hover {
+    background-color: var(--accent-color);
+    color: var(--background-dark); 
+    box-shadow: 0 4px 10px rgba(255, 112, 166, 0.4);
+}
+
+/* Interactive Press Down Effect */
+.btn:active {
+    transform: translateY(2px);
+    box-shadow: none !important;
+}
+
+/* ===========================
+    HEADER & NAVIGATION - ปรับขนาด Icon ให้ Minimal ยิ่งขึ้น
+    =========================== */
+.main-header {
+    background-color: var(--surface-dark); 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); 
+    position: sticky;
+    top: 0;
+    z-index: 1000; 
+    padding: 1rem 0;
+}
+
+.main-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 1rem; 
+    font-weight: 400; 
+    color: var(--primary-color); 
+}
+
+.logo img{
+    width: 80px;
+}
+
+.main-nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem; /* ระยะห่างระหว่าง Link */
+}
+
+/* Base style สำหรับ Navigation Link (Self-Contained Block) */
+.main-nav li {
+    position: relative; 
+    z-index: 10;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: var(--text-secondary-light); 
+    font-weight: 500;
+    transition: color 0.3s, background-color 0.3s, transform 0.3s, box-shadow 0.3s; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    
+    /* ขนาดเริ่มต้น (Icon Minimal) */
+    width: 48px; 
+    height: 48px;
+    padding: 0;
+    border-radius: 50%; 
+    overflow: visible; 
+    
+    /* เพิ่มเงาเริ่มต้นเล็กน้อย */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); 
+}
+
+/* 1. Icon State (Default) */
+.main-nav a i {
+    font-size: 1.1rem; /* ปรับขนาด Icon ให้เล็กลงอีก (จาก 1.5rem เป็น 1.1rem) */
+    transition: opacity 0.3s, transform 0.3s;
+    color: var(--primary-color); /* ใช้ Secondary Color ให้ Icon เด่น */
+}
+
+/* 2. Text State (ซ่อนไว้ก่อน) */
+.main-nav a::before {
+    content: attr(data-text); 
+    position: absolute;
+    top: 50%;
+    
+    /* ปรับตำแหน่งเริ่มต้นของข้อความให้ชิดซ้ายของ Link เดิม */
+    left: 24px; 
+    
+    transform: translate(-50%, -50%) scale(0.8); 
+    opacity: 0;
+    font-weight: 500; /* ความหนาของข้อความ */
+    font-size: 0.9rem; 
+    color: var(--text-light); 
+    transition: opacity 0.3s, transform 0.3s;
+    white-space: nowrap; 
+    z-index: 1; 
+    
+    /* สไตล์เพิ่มเติมสำหรับข้อความ */
+    padding: 0 15px; 
+}
+
+/* 3. HOVER / ACTIVE Effect */
+.main-nav a:hover,
+.main-nav a.active { 
+    /* พื้นหลัง Hover/Active - เพิ่มความโดดเด่น */
+    background-color: rgba(187, 134, 252, 0.15); 
+    color: var(--primary-color); 
+    
+    /* ขนาดเมื่อขยายตัว */
+    width: auto; 
+    min-width: 48px;
+    height: 48px;
+    padding: 0 15px; 
+    border-radius: 8px;
+    
+    /* เพิ่มเงาเรืองแสงสี Primary เมื่อ Hover/Active */
+    box-shadow: 0 0 15px rgba(187, 134, 252, 0.5), 0 0 5px rgba(0, 0, 0, 0.8); 
+    
+    /* เปลี่ยนจาก Flex Center เป็นชิดซ้ายเพื่อรองรับการขยายตัว */
+    justify-content: flex-start; 
+}
+
+.main-nav a:hover i,
+.main-nav a.active i {
+    opacity: 0;
+    transform: scale(0); 
+    
+    /* เมื่อ Icon หายไป จะไม่มีพื้นที่เหลืออยู่ */
+    width: 0; 
+    height: 0;
+}
+
+.main-nav a:hover::before,
+.main-nav a.active::before {
+    opacity: 1;
+    /* ปรับให้ข้อความอยู่ตรงกลางของบล็อกที่ขยายตัว */
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1); 
+}
+
+/* ===========================
+    HERO SECTION - จัดวางแบบ WOW! และ 3D
+    =========================== */
+.hero-section {
+    background: linear-gradient(150deg, #1f1f1f 0%, #000000 100%); 
+    color: white; 
+    text-align: left; 
+    padding: 8rem 0; 
+    margin-bottom: 4rem;
+    position: relative;
+    overflow: hidden;
+}
+
+/* 2 Column Layout สำหรับหน้าจอใหญ่ */
+.hero-content-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    text-align: left;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-visual {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+    animation: subtleFloat 4s ease-in-out infinite; 
+}
+
+/* 3D Transform สำหรับ Mockup */
+.placeholder-device {
+    width: 100%;
+    max-width: 500px;
+    height: 300px;
+    background-color: rgba(187, 134, 252, 0.15); 
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 0 30px rgba(187, 134, 252, 0.3); /* เงาเรืองแสง */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border: 3px solid var(--primary-color); 
+    
+    /* 3D Transform เริ่มต้น */
+    transform: rotateY(-10deg) rotateX(5deg) scale(1); 
+    transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94); 
+}
+
+/* Effect เมื่อ Hover บน Hero Section */
+.hero-section:hover .placeholder-device {
+    transform: rotateY(-5deg) rotateX(2deg) scale(1.02); 
+}
+
+.hero-title {
+    font-size: 3.75rem; 
+    margin-bottom: 1.5rem;
+    font-weight: 600; 
+    line-height: 1.1; 
+    color: var(--secondary-color); 
+}
+
+.hero-description {
+    font-size: 1.2rem; 
+    margin-bottom: 2.5rem;
+    max-width: none; 
+    color: var(--text-light); 
+    font-weight: 500; 
+}
+
+.hero-cta {
+    justify-content: start; 
+    display: flex; 
+    gap: 1rem;
+}
+
+
+/* ===========================
+    SECTIONS
+    =========================== */
+section {
+    padding: 4rem 0;
+}
+
+/* พื้นหลังสลับระหว่าง Dark และ Surface Dark */
+.problem-section, .how-section, .about-section, .contact-section {
+    background-color: var(--background-dark); 
+}
+.features-section, .team-section {
+    background-color: var(--surface-dark); 
+}
+
+/* Features Grid */
+.features-grid {
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+    margin-top: 3rem;
+}
+
+/* FEATURE CARDS: Interactive 3D Tilt + Glow */
+.feature-card {
+    background: var(--surface-dark); 
+    padding: 2rem;
+    border-radius: 15px; 
+    /* Soft Glow Effect */
+    box-shadow: 0 0 10px rgba(187, 134, 252, 0.2); 
+    border-top: 5px solid var(--secondary-color); 
+    text-align: left; 
+    
+    transform-style: preserve-3d; 
+    transform: translateZ(0); 
+    transition: transform 0.4s ease-out, box-shadow 0.4s ease-out;
+    color: var(--text-light);
+}
+
+/* 3D Tilt Effect เมื่อนำเมาส์ไปชี้ - เพิ่ม Glow ให้โดดเด่น */
+.feature-card:hover {
+    transform: translateY(-10px) rotateX(2deg) rotateY(2deg); 
+    box-shadow: 0 0 25px rgba(187, 134, 252, 0.4), 0 0 50px rgba(3, 218, 198, 0.1); 
+}
+
+.feature-icon {
+    font-size: 3.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--accent-color); 
+}
+
+.feature-card h3 {
+    font-size: 1.7rem; 
+    font-weight: 600; 
+    margin-bottom: 0.5rem;
+    color: var(--primary-color); 
+}
+
+/* How It Works Section */
+.steps {
+    display: flex; 
+    justify-content: space-around;
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+.step {
+    flex: 1; 
+    text-align: center;
+    padding: 1.5rem;
+    background-color: var(--surface-dark); 
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    color: var(--text-light);
+}
+
+.step-number {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 10px; 
+    background-color: var(--accent-color); 
+    color: var(--background-dark); 
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.step h3 {
+    font-size: 1.3rem;
+    color: var(--primary-color);
+}
+
+/* Team Section */
+.team-grid {
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.team-member {
+    text-align: center;
+    background: var(--surface-dark); 
+    padding: 2rem 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s;
+}
+
+.team-member:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(3, 218, 198, 0.5); /* เรืองแสงสี Secondary เมื่อ Hover */
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: 5px solid var(--secondary-color); 
+    transition: border-color 0.3s;
+}
+.team-member:hover img {
+    border: 5px solid var(--accent-color);
+}
+
+.team-member h3 {
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+}
+
+.team-member .role {
+    color: var(--secondary-color); 
+    font-weight: 600; 
+    margin-bottom: 0.25rem;
+}
+
+.team-member .student-id {
+    color: var(--text-secondary-light);
+    font-size: 0.9rem;
+}
+
+/* Contact/CTA Section */
+.contact-section {
+    background-color: var(--background-dark); 
+    text-align: center;
+}
+
+/* ===========================
+    FOOTER
+    =========================== */
+.main-footer {
+    background-color: #000000; 
+    color: var(--text-secondary-light); 
+    padding: 3rem 0 1rem;
+    margin-top: 4rem;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer-info h4,
+.footer-links h4,
+.footer-contact h4 {
+    margin-bottom: 1rem;
+    color: var(--accent-color); 
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links a {
+    color: var(--text-secondary-light);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: var(--secondary-color); 
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* ===========================
+    KEYFRAME ANIMATION
+    =========================== */
+@keyframes softPulse {
+    0% { transform: scale(1); opacity: 0.8; }
+    50% { transform: scale(1.01); opacity: 1; }
+    100% { transform: scale(1); opacity: 0.8; }
+}
+
+@keyframes subtleFloat {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+    100% { transform: translateY(0); }
+}
+
+/* ===========================
+    RESPONSIVE DESIGN 
+    =========================== */
+/* สำหรับแท็บเล็ตและหน้าจอที่เล็กกว่า 992px */
+@media (max-width: 992px) {
+    
+    .hero-section {
+        padding: 4rem 0;
+    }
+    
+    /* Hero Section: เปลี่ยนจาก 2 คอลัมน์เป็น 1 คอลัมน์ */
+    .hero-content-wrapper {
+        flex-direction: column;
+        gap: 3rem;
+    }
+    
+    .hero-title {
+        font-size: 2.5rem;
+        text-align: center; 
+    }
+    .hero-description {
+        text-align: center; 
+    }
+    .hero-visual {
+        min-height: 250px;
+    }
+    
+    /* ยกเลิก 3D Effect ใน Responsive เพื่อประสิทธิภาพ */
+    .placeholder-device {
+        transform: none !important; 
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    }
+    .hero-section:hover .placeholder-device {
+        transform: none;
+    }
+
+    /* จัดปุ่มให้อยู่ตรงกลาง */
+    .hero-cta {
+        justify-content: center; 
+    }
+    
+    /* Features/Steps Card (ถ้ามี) ให้เนื้อหาอยู่ตรงกลาง */
+    .feature-card {
+        text-align: center;
+    }
+    .feature-icon {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* สำหรับมือถือและหน้าจอที่เล็กกว่า 768px */
+@media (max-width: 768px) {
+    .main-header .container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .main-nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
+    
+    .steps {
+        flex-direction: column; 
+    }
+
+    section {
+        padding: 3rem 0;
+    }
+}
+
+/* สำหรับมือถือที่เล็กมาก */
+@media (max-width: 480px) {
+    html {
+        font-size: 14px;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-cta {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn {
+        width: 100%; 
+    }
+}
