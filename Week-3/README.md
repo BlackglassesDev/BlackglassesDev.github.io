@@ -13,6 +13,6 @@ Software Design and Development
 | นางสาว อรนุช  ลุงหลิ่ง | 67543206031-6 | [(nuch-oranuch)](https://github.com/nuch-oranuch) |
 
 ## ไฟล์สำคัญ
- - [LAB3_UseCase.md] - Main Flow + Alternative Flows
+ - [LAB3_UseCase.md](https://github.com/BlackglassesDev/BlackglassesDev.github.io/blob/main/Week-3/LAB3_UseCase.md) - Main Flow + Alternative Flows
  - [Use_Case_Diagram] - Show Use Case Diagram
  - [Product_Backlog](https://miro.com/app/board/uXjVJkXIgQI=/) - Miro of Group 4Bug
