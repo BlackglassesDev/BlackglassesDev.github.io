@@ -180,6 +180,9 @@ body {
     margin: 25px
 }
 
+.modal-card:hover{
+    box-shadow: 0 4px 8px 3px rgba(20, 20, 20, 0.4);
+}
 
 
 /* =============== Mobile Responsive =============== */
