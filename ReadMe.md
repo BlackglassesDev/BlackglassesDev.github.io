@@ -9,19 +9,13 @@ Software Design and Development
 รายละเอียดของกลุ่มเรา :
 `ชื่อกลุ่ม : 4Bug`
 
-## หัวข้อโปรเจกต์
+## หัวข้อเทอมโปรเจกต์
 `📚 StudyBuddy - แพลตฟอร์มจับคู่เพื่อนเรียน และแชร์สรุปวิชา`
 
-## สมาชิกกลุ่ม
-- นายชโนดม อองกุลนะ 67543206045-6
-    - [Github: BlackglassesDev](https://github.com/BlackglassesDev)
-    - Email University: `Chanodom_On67@live.rmutl.ac.th`
-- นายชนาธิป ระวิมี 67543206044-9
-    - [Github: Tipnacha](https://github.com/Tipnacha)
-    - Email University: `Chanatip_Ra67@live.rmutl.ac.th`
-- นางสาวจิดาภา กันทวงศ์ 67543206042-3
-    - [Github: Jidapakantawong](https://github.com/Jidapakantawong)
-    - Email University: `Jidapa_Ka67@live.rmutl.ac.th`
-- นางสาวอรนุช ลุงหลิ่ง 67543206031-6
-    - [Github: nuch-oranuch](https://github.com/nuch-oranuch)
-    - Email University: `Oranuch_Lu67@live.rmutl.ac.th`
+## สมาชิกในกลุ่ม
+| ชื่อ - นามสกุล | รหัสนักศึกษา | Email University | Github |
+| :---: | :---: | :---: | :---: |
+| นาย ชโนดม อองกุลนะ | 67543206045-6 | Chanodom_On67@live.rmutl.ac.th | [(BlackglassesDev)](https://github.com/BlackglassesDev) |
+| นาย ชนาธิป  ระวิมี | 67543206044-9 | Chanatip_Ra67@live.rmutl.ac.th | [(Tipnacha)](https://github.com/Tipnacha) |
+| นางสาว จิดาภา กันทวงศ์ | 67543206042-3 | Jidapa_Ka67@live.rmutl.ac.th | [(Jidapakantawong)](https://github.com/Jidapakantawong) |
+| นางสาว อรนุช  ลุงหลิ่ง | 67543206031-6 | Oranuch_Lu67@live.rmutl.ac.th | [(nuch-oranuch)](https://github.com/nuch-oranuch) |
