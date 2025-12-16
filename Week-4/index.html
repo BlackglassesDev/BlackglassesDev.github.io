@@ -13,13 +13,15 @@
         TODO: ส่วนนี้ให้เขียนใน README.md แยกต่างหาก
         - อธิบาย Persona (ชื่อ, อายุ, อาชีพ, Goals, Pain Points)
         - อธิบายว่าหน้าเว็บนี้ตอบโจทย์ Persona อย่างไร
+
+        ----------(ทำแล้ว)------------------
     -->
 
     <header class="site-header">
         <div class="logo-area">
             <!-- TODO: เปลี่ยนชื่อระบบ/โลโก้ให้เข้ากับ Persona -->
-            <h1>Persona Dashboard</h1>
-            <p class="tagline">สรุปทุกอย่างในหน้าเดียวสำหรับผู้ใช้ของคุณ</p>
+            <h1>CHANODOM Dashboard</h1>
+            <p class="tagline">สรุป Mark List ที่ต้องทำในหน้าเดียว</p>
         </div>
 
         <nav class="main-nav">
@@ -30,6 +32,7 @@
             <a href="#today">วันนี้</a>
             <a href="#tasks">งานของฉัน</a>
             <a href="#extra">ข้อมูลอื่น ๆ</a>
+            <a href="my_portfolio.html">แนะนำตัว</a>
         </nav>
     </header>
 
@@ -37,10 +40,10 @@
         <!-- Section 1: ภาพรวมวันนี้ / Overview -->
         <section id="today" class="section section-today">
             <header class="section-header">
-                <h2>ภาพรวมวันนี้ของ Persona</h2>
-                <!-- TODO: สรุปสั้น ๆ ว่า Persona สนใจอะไรเป็นอันดับแรก -->
+                <h2>ภาพรวมวันนี้ของ Chanodom</h2>
+                <!-- TODO: สรุปสั้น ๆ ว่า Persona สนใจอะไรเป็นอันดับแรก ------(ทำแล้ว)------ -->
                 <p class="section-subtitle">
-                    สรุปข้อมูลที่สำคัญที่สุดที่ Persona อยากเห็นเมื่อเปิดเว็บนี้
+                    แสดงตารางงาน / การนัดหมาย / สถิติเล็กๆน้อยๆ
                 </p>
             </header>
 
@@ -48,25 +51,27 @@
                 <!-- 
                     TODO: ให้นักศึกษาเปลี่ยนเนื้อหาในแต่ละ .card 
                     ให้ตรงกับ persona ของกลุ่มตัวเอง
+                    ------(ทำแล้ว)------
                 -->
                 <article class="card">
                     <h3>สรุปงานวันนี้</h3>
-                    <p>งานที่ต้องทำ: 3 งาน</p>
-                    <p>งานที่ใกล้ deadline ที่สุด: ส่งรายงานวิชา ENGCE301</p>
-                    <!-- TODO: เปลี่ยนข้อมูลเป็นของ Persona -->
+                    <p>งานที่ต้องทำ: 4 งาน</p>
+                    <p>งานที่ใกล้ deadline ที่สุด: ส่งรายงานวิชา ENGCE128 Pre-COOP</p>
+                    <!-- TODO: เปลี่ยนข้อมูลเป็นของ Persona ------(ทำแล้ว)------ -->
                 </article>
 
                 <article class="card">
                     <h3>นัดหมายสำคัญ</h3>
-                    <p>13:00 – ประชุมกลุ่มโปรเจกต์</p>
-                    <p>19:30 – ทบทวนบทเรียน / ทำการบ้าน</p>
-                    <!-- TODO: ปรับให้ตรงกับชีวิตจริงของ Persona -->
+                    <p>2025-12-16</p>
+                    <p>17:00 – ประชุมหาที่ฝึกงาน</p>
+                    <p>20:00 – ทบทวนบทเรียน / ทำการบ้าน</p>
+                    <!-- TODO: ปรับให้ตรงกับชีวิตจริงของ Persona ------(ทำแล้ว)------ -->
                 </article>
 
                 <article class="card">
                     <h3>สถิติเล็ก ๆ น้อย ๆ</h3>
-                    <p>งานที่เสร็จแล้วในสัปดาห์นี้: 5</p>
-                    <p>เปอร์เซ็นต์ความคืบหน้า: 60%</p>
+                    <p>งานที่เสร็จแล้วในสัปดาห์นี้: 2</p>
+                    <p>เปอร์เซ็นต์ความคืบหน้า: 50%</p>
                     <!-- TODO: อาจเปลี่ยนเป็นกราฟแท่ง/แถบ progress bar ในเวอร์ชันถัดไป -->
                 </article>
             </div>
@@ -77,7 +82,7 @@
             <header class="section-header">
                 <h2>งานที่ต้องทำ</h2>
                 <p class="section-subtitle">
-                    รายการงาน / กิจกรรมที่ Persona ต้องจัดการในช่วงวันนี้หรือสัปดาห์นี้
+                    รายการงาน / กิจกรรมที่ต้องจัดการในช่วงวันนี้หรือสัปดาห์นี้
                 </p>
             </header>
 
@@ -89,9 +94,10 @@
                 <div class="tasks-list">
                     <h3>To-Do List</h3>
                     <ul>
-                        <li>ตัวอย่าง: ตรวจอีเมลจากอาจารย์</li>
-                        <li>ตัวอย่าง: ทำแบบฝึกหัด HTML/CSS</li>
-                        <li>ตัวอย่าง: เตรียมสไลด์นำเสนอ</li>
+                        <li>หาสถานที่ฝึกงานสหกิจเพื่อทำรายงาน - ENGCE128</li>
+                        <li>แก้ HTML และ CSS เพื่อส่งงาน Lab4 - ENGCE301</li>
+                        <li>ทำรายงานภัยคุกคามทาง Cyber - ENGCE110</li>
+                        <li>ทำ CE02 - ENGCE113</li>
                         <!-- TODO: เปลี่ยนรายการเป็นงานจริงของ Persona -->
                     </ul>
                 </div>
@@ -108,19 +114,44 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td>ส่งรายงาน LAB Week 4</td>
-                                <td>พุธ 23:59</td>
-                                <td>กำลังทำ</td>
-                            </tr>
-                            <tr>
-                                <td>อ่านทบทวน Design Principles</td>
-                                <td>วันนี้</td>
-                                <td>ยังไม่ได้เริ่ม</td>
+                                <td>หาสถานที่ฝึกงานสหกิจ</td>
+                                <td>อังคาร 23:59</td>
+                                <td class="status-pending">กำลังทำ</td>
                             </tr>
                             <tr>
                                 <td>นัดหมายปรึกษาโปรเจกต์</td>
-                                <td>ศุกร์หน้า</td>
-                                <td>จองเวลาแล้ว</td>
+                                <td>พุธ</td>
+                                <td class="status-done">จองเวลาแล้ว</td>
+                            </tr>
+                            <tr>
+                                <td>ส่งงาน LAB Week 4</td>
+                                <td>พฤหัสบดี</td>
+                                <td class="status-pending">กำลังทำ</td>
+                            </tr>
+                            <tr>
+                                <td>ทดลองเขียน HTML วิชา Web Pro</td>
+                                <td>ศุกร์ 23:59</td>
+                                <td class="status-done">เสร็จแล้ว</td>
+                            </tr>
+                            <tr>
+                                <td>ทำรายงานภัยคุกคามทาง Cyber</td>
+                                <td>พุธหน้า 23:59</td>
+                                <td class="status-pending">กำลังทำ</td>
+                            </tr>
+                            <tr>
+                                <td>ทำ CE02</td>
+                                <td>ก่อน Mid term</td>
+                                <td class="status-pending">กำลังทำ</td>
+                            </tr>
+                             <tr>
+                                <td>ทดลองเขียน HTML วิชา Web Pro</td>
+                                <td>ศุกร์ 23:59</td>
+                                <td class="status-done">เสร็จแล้ว</td>
+                            </tr>
+                            <tr>
+                                <td>ตอบคำถาม วิชา Web Pro</td>
+                                <td>ศุกร์ 23:59</td>
+                                <td class="status-done">เสร็จแล้ว</td>
                             </tr>
                             <!-- TODO: ปรับข้อมูลตารางให้เข้ากับ Persona -->
                         </tbody>
@@ -132,15 +163,15 @@
         <!-- Section 3: ข้อมูลเสริม / Extra Info -->
         <section id="extra" class="section section-extra">
             <header class="section-header">
-                <h2>ข้อมูลอื่น ๆ ที่ Persona สนใจ</h2>
+                <h2>ข้อมูลอื่น ๆ ที่สนใจ</h2>
                 <p class="section-subtitle">
-                    ส่วนนี้ให้นักศึกษาออกแบบเองว่าจะใส่อะไร เช่น ข่าว, ลิงก์, สรุปคะแนน, แผนระยะยาว ฯลฯ
+                    Tips ประจำวัน / เว็บไซต์ที่ใช้บ่อย
                 </p>
             </header>
 
             <div class="extra-layout">
                 <article class="card">
-                    <h3>ตัวอย่าง: Tips ประจำวัน</h3>
+                    <h3>Tips ประจำวัน</h3>
                     <p>
                         "แบ่งเวลาทำงานเป็นช่วงละ 25 นาที แล้วพัก 5 นาที (เทคนิค Pomodoro)"
                     </p>
@@ -148,11 +179,11 @@
                 </article>
 
                 <article class="card">
-                    <h3>ตัวอย่าง: ลิงก์ที่ใช้บ่อย</h3>
+                    <h3>เว็บไซต์ที่ใช้บ่อย</h3>
                     <ul>
-                        <li><a href="#">ระบบจัดการเรียน</a></li>
-                        <li><a href="#">Google Calendar</a></li>
-                        <li><a href="#">GitHub Repository</a></li>
+                        <li><a href="https://blackglassesdev.github.io/">หน้าเว็บรวมงาน กลุ่ม 4Bug</a></li>
+                        <li><a href="https://thailandfxwarrior.com/coding/proj/prepro/">thailandfxwarrior อ.ตั้ม</a></li>
+                        <li><a href="https://github.com/BlackglassesDev/BlackglassesDev.github.io/tree/main/Week-4">GitHub Repository</a></li>
                         <!-- TODO: เปลี่ยนลิงก์ให้ตรงกับของจริงที่ Persona ใช้ -->
                     </ul>
                 </article>
@@ -163,6 +194,8 @@
     <footer class="site-footer">
         <!-- TODO: ปรับข้อความ footer ตามที่กลุ่มต้องการ -->
         <p>สร้างเพื่อ ENGCE301 – Week 4 LAB (HTML, CSS &amp; Responsive Design)</p>
+        <p>อาจารย์ผู้สอน: นายธนิต เกตุแก้ว</p>
+        <p>นายชโนดม อองกุลนะ</p>
     </footer>
 
     <!-- 

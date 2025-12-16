@@ -109,7 +109,8 @@ main {
 
 /* Card พื้นฐาน */
 .card {
-  flex: 1 1 250px; /* กว้างปรับได้, อย่างน้อย 250px */
+  flex: 1 1 250px;
+  /* กว้างปรับได้, อย่างน้อย 250px */
   background-color: rgba(15, 23, 42, 0.95);
   border-radius: 0.75rem;
   padding: 1rem 1.2rem;
@@ -123,9 +124,13 @@ main {
   color: #facc15;
 }
 
-.card p,
+.card p {
+  font-size: 0.95rem;
+}
+
 .card li {
   font-size: 0.95rem;
+  margin-left: 25px;
 }
 
 /* Section Tasks Layout (ตัวอย่างการทำ 2 คอลัมน์) */
@@ -187,6 +192,18 @@ main {
   color: #9ca3af;
 }
 
+.status-done {
+  /* display: inline-flex;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 0.7rem;
+  font-weight: 600; */
+  background-color: rgba(0, 255, 0, 0.573);
+}
+.status-pending{
+  background-color: #fff7009a;
+}
+
 /* ===== 4. Responsive Design (Media Queries) ===== */
 
 /* 
@@ -221,7 +238,8 @@ main {
 /* Mobile (<= 480px) */
 @media (max-width: 480px) {
   body {
-    font-size: 0.95rem; /* TODO: นักศึกษาปรับเองได้ ถ้ารู้สึกเล็ก/ใหญ่ไป */
+    font-size: 0.95rem;
+    /* TODO: นักศึกษาปรับเองได้ ถ้ารู้สึกเล็ก/ใหญ่ไป */
   }
 
   .logo-area h1 {
