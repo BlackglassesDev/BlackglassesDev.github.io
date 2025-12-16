@@ -174,6 +174,10 @@ main {
   background-color: rgba(15, 23, 42, 0.6);
 }
 
+.tasks-table tr{
+  border-left: 5px solid #154ce5;
+}
+
 /* Section Extra */
 .extra-layout {
   display: flex;
