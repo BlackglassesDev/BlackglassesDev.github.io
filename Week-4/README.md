@@ -6,8 +6,8 @@ Software Design and Development
 | :---: | :---: | :---: | :---: | :---: |
 | นาย ชโนดม อองกุลนะ | 67543206045-6 | [(BlackglassesDev)](https://github.com/BlackglassesDev) | [Week-4](https://github.com/BlackglassesDev/BlackglassesDev.github.io/tree/main/Week-4) | [index Week-4](https://blackglassesdev.github.io/Week-4/) |
 | นาย ชนาธิป  ระวิมี | 67543206044-9 | [(Tipnacha)](https://github.com/Tipnacha) | [Week-4(Waiting for)](null) | [index Week-4](null) |
-| นางสาว จิดาภา กันทวงศ์ | 67543206042-3 | [(Jidapakantawong)](https://github.com/Jidapakantawong) | [Week-4(Waiting for)](null) | [index Week-4](null) |
-| นางสาว อรนุช  ลุงหลิ่ง | 67543206031-6 | [(nuch-oranuch)](https://github.com/nuch-oranuch) | [Week-4(Waiting for)](null) | [index Week-4](null) |
+| นางสาว จิดาภา กันทวงศ์ | 67543206042-3 | [(Jidapakantawong)](https://github.com/Jidapakantawong) | [Week-4](https://github.com/Jidapakantawong/Jidapakantawong.github.io) | [index Week-4](https://jidapakantawong.github.io) |
+| นางสาว อรนุช  ลุงหลิ่ง | 67543206031-6 | [(nuch-oranuch)](https://github.com/nuch-oranuch) | [Week-4](https://github.com/nuch-oranuch/nuch-oranuch.github.io) | [index Week-4](https://nuch-oranuch.github.io/week-4/) |
 
 # ENGCE301 – Week 4 LAB  
 ## HTML, CSS, Responsive Design + UX Thinking  
