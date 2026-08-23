@@ -5,10 +5,10 @@
 	>
 		<div class="relative z-10 w-full md:w-8/12">
 			<h1
-				class="mb-8 font-display-lg-mobile text-display-lg-mobile leading-tight tracking-tight text-primary md:font-display-lg md:text-display-lg"
+				class="mb-3 font-display-lg-mobile text-display-lg-mobile leading-tight tracking-tight text-primary md:font-display-lg md:text-display-lg"
 			>
-				Creative Developer <br /><span class="font-light text-surface-tint italic"
-					>&amp; Designer</span
+				Chanodom Ongkulna <br /><span class="font-light text-surface-tint italic text-2xl md:text-4xl"
+					>If you're exhausted, you're still early in the learning process.</span
 				>
 			</h1>
 			<p class="mb-12 max-w-2xl font-body-lg text-body-lg text-on-surface-variant">
