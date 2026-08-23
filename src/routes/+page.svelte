@@ -1,4 +1,4 @@
-<main class="pt-[140px] md:pt-[180px]">
+<main class="pt-[80px] md:pt-[10px]">
 	<section
 		id="about"
 		class="relative mx-auto mb-section-gap flex min-h-[70vh] max-w-container-max flex-col items-start justify-center px-margin-mobile md:px-margin-desktop"

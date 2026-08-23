@@ -1,6 +1,6 @@
 <script>
 	import './layout.css';
-	import favicon from '$lib/assets/favicon.svg';
+	import logo from '$lib/assets/logo.png';
 	import DownloadModal from '$lib/components/DownloadModal.svelte';
 	import Footer from '$lib/components/Footer.svelte';
 	import Navbar from '$lib/components/Navbar.svelte';
@@ -11,8 +11,8 @@
 </script>
 
 <svelte:head>
-	<link rel="icon" href={favicon} />
-	<title>AESTHETE - Luxury Portfolio</title>
+	<link rel="icon" href={logo} />
+	<title>Chanodom</title>
 	<link href="https://fonts.googleapis.com" rel="preconnect" />
 	<link crossorigin href="https://fonts.gstatic.com" rel="preconnect" />
 	<link

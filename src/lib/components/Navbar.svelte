@@ -1,5 +1,6 @@
 <script>
 	import { resolve } from '$app/paths';
+	import logo_rm_bg from '$lib/assets/logo-removebg.png';
 
 	let { ondownload } = $props();
 
@@ -13,7 +14,7 @@
 	class="fixed top-4 left-1/2 z-50 mx-auto flex w-[calc(100%-2rem)] max-w-container-max -translate-x-1/2 items-center justify-between rounded-full border border-white/10 bg-[#121414]/50 px-6 py-4 font-label-caps text-label-caps backdrop-blur-[20px] md:top-6 md:px-10"
 >
 	<div class="font-headline-sm text-headline-sm tracking-tighter text-on-surface">
-		BlackglassesDev
+		<img src={logo_rm_bg} alt="Logo" class="h-10 w-10" />
 	</div>
 	<ul class="hidden items-center gap-gutter md:flex">
 		<li><a class={activeClass} href={resolve('/')}>Home</a></li>
