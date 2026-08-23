@@ -47,6 +47,13 @@
 	>
 		<div class="mb-16 flex items-end justify-between border-b border-white/10 pb-8">
 			<h2 class="font-headline-md text-headline-md text-primary">Featured Works</h2>
+			<!-- svelte-ignore a11y_invalid_attribute -->
+			<a
+				class="hidden items-center gap-2 rounded-full px-4 py-2 font-label-caps text-label-caps tracking-[0.2em] text-on-surface-variant uppercase transition-colors duration-400 hover:bg-white/5 hover:text-primary md:inline-flex"
+				href="#"
+			>
+				All Projects <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+			</a>
 		</div>
 		<div class="grid grid-cols-1 gap-gutter md:grid-cols-12">
 			<article class="group cursor-pointer md:col-span-8">

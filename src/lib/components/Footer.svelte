@@ -13,5 +13,28 @@
 		>
 			© 2024 AESTHETE. ALL RIGHTS RESERVED.
 		</div>
+		<ul class="flex gap-8 text-[10px]">
+			<!-- svelte-ignore a11y_invalid_attribute -->
+			<li>
+				<a
+					class="text-on-surface-variant transition-all duration-400 hover:text-primary hover:opacity-80"
+					href="#">LinkedIn</a
+				>
+			</li>
+			<!-- svelte-ignore a11y_invalid_attribute -->
+			<li>
+				<a
+					class="text-on-surface-variant transition-all duration-400 hover:text-primary hover:opacity-80"
+					href="#">Dribbble</a
+				>
+			</li>
+			<!-- svelte-ignore a11y_invalid_attribute -->
+			<li>
+				<a
+					class="text-on-surface-variant transition-all duration-400 hover:text-primary hover:opacity-80"
+					href="#">Behance</a
+				>
+			</li>
+		</ul>
 	</div>
 </footer>
