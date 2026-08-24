@@ -62,7 +62,7 @@
 			</a>
 		</div>
 		<div class="grid grid-cols-1 gap-gutter md:grid-cols-12">
-			<article class="group cursor-pointer md:col-span-8">
+			<article class="group md:col-span-8">
 				<div class="glass-panel relative mb-6 aspect-[16/9] overflow-hidden rounded-2xl">
 					<img
 						class="portfolio-card-img h-full w-full object-cover grayscale transition-all duration-700 hover:grayscale-0"
