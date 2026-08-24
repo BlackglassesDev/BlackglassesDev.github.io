@@ -1,3 +1,6 @@
+<script>
+	import RMUTLSkillMapping from "../lib/assets/skillMappingRMUTL.png";
+</script>
 <main class="pt-[80px] md:pt-[10px]">
 	<section
 		id="about"
@@ -64,7 +67,7 @@
 					<img
 						class="portfolio-card-img h-full w-full object-cover grayscale transition-all duration-700 hover:grayscale-0"
 						alt="img project RMUTL-SkillMapping."
-						src="https://github.com/user-attachments/assets/8ec16d0e-c60f-4dcc-b14f-819401650e85"
+						src="{RMUTLSkillMapping}"
 					/>
 				</div>
 				<div class="flex items-start justify-between">
@@ -75,11 +78,12 @@
 							RMUTL-SkillMapping
 						</h3>
 						<p class="font-body-md text-body-md text-on-surface-variant">Project skill mapping.</p>
+						<!-- <p class="font-body-md text-body-md text-on-surface-variant">Status : Pending..</p> -->
 					</div>
-					<!-- <span
+					<span
 						class="inline-block rounded-full border border-white/20 bg-[#050505] px-4 py-1.5 font-label-caps text-[10px] tracking-[0.2em] text-on-surface uppercase"
-						>SvelteKit</span
-					> -->
+						>Status: Pending</span
+					>
 				</div>
 			</article>
 			<!-- <article class="group cursor-pointer md:col-span-4 md:mt-24">

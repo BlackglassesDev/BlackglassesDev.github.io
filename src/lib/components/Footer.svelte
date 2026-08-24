@@ -11,7 +11,7 @@
 		<div
 			class="mb-4 text-center text-[10px] text-on-surface-variant opacity-80 md:mb-0 md:text-left"
 		>
-			© 2024 BlackglassesDev. ALL RIGHTS RESERVED.
+			© 2026 BlackglassesDev. ALL RIGHTS RESERVED.
 		</div>
 		<ul class="flex gap-8 text-[10px]">
 			<!-- svelte-ignore a11y_invalid_attribute -->
