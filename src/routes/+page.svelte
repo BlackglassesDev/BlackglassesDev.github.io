@@ -7,14 +7,17 @@
 			<h1
 				class="mb-3 font-display-lg-mobile text-display-lg-mobile leading-tight tracking-tight text-primary md:font-display-lg md:text-display-lg"
 			>
-				Chanodom Ongkulna <br /><span class="font-light text-surface-tint italic text-2xl md:text-4xl"
+				Chanodom Ongkulna <br /><span
+					class="text-2xl font-light text-surface-tint italic md:text-4xl"
 					>If you're exhausted, you're still early in the learning process.</span
 				>
 			</h1>
-			<p class="mb-12 max-w-2xl font-body-lg text-body-lg text-on-surface-variant">
-				Crafting elevated digital experiences with precision. Specializing in SvelteKit architecture
-				and bespoke Tailwind CSS styling for luxury brands and executive portfolios.
+			<p class="mb-1 max-w-2xl font-body-lg text-body-lg text-on-surface-variant">
+				Welcome to my personal space on the web. I built this site using SvelteKit to experiment
+				with new technology while highlighting my favorite projects and providing a place to
+				connect. Feel free to explore my work.
 			</p>
+			<p class="text-xl mb-12 font-light text-surface-tint italic md:text-xl">Code Name: BlackglassesDev</p>
 			<div class="flex flex-col items-start gap-6 sm:flex-row sm:items-center">
 				<a
 					class="inline-flex items-center justify-center rounded-full border border-transparent bg-[#E5E4E2] px-8 py-4 font-label-caps text-label-caps font-bold tracking-[0.2em] text-[#050505] uppercase transition-all duration-400 hover:border-[#E5E4E2] hover:bg-transparent hover:text-[#E5E4E2]"
@@ -60,8 +63,8 @@
 				<div class="glass-panel relative mb-6 aspect-[16/9] overflow-hidden rounded-2xl">
 					<img
 						class="portfolio-card-img h-full w-full object-cover grayscale transition-all duration-700 hover:grayscale-0"
-						alt="A high-end website mockup featuring a dark mode, minimalist luxury fashion aesthetic with sharp typography and high-contrast photography."
-						src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPf_wnvv1wVXdyw1EriZoUxovHGA2lRGsFHZKopY_IFie5dhkjO69ksZekmKNmcdUuOFs9uJ2QL_o-Qntd9Kq73HuyKANGO1sb0IsdkQiWBX8_tolIlSdobxBk26sxNldjG3Vy2UEtNOsaBgcY-MyfjaaPlv5JlwcvhMz5l4kaQ19vgU6jdGc7dLSTXOb-LsN7G6O7iHFaBWT9EhCs6Q_RlhnyfBhzu_CIWw5yIHACPvsMfYQ3nzU1xQ"
+						alt="img project RMUTL-SkillMapping."
+						src="https://github.com/user-attachments/assets/8ec16d0e-c60f-4dcc-b14f-819401650e85"
 					/>
 				</div>
 				<div class="flex items-start justify-between">
@@ -69,17 +72,17 @@
 						<h3
 							class="mb-2 font-headline-sm text-headline-sm text-primary transition-all group-hover:text-glow-silver"
 						>
-							Vogue Atelier
+							RMUTL-SkillMapping
 						</h3>
-						<p class="font-body-md text-body-md text-on-surface-variant">E-Commerce Redesign</p>
+						<p class="font-body-md text-body-md text-on-surface-variant">Project skill mapping.</p>
 					</div>
-					<span
+					<!-- <span
 						class="inline-block rounded-full border border-white/20 bg-[#050505] px-4 py-1.5 font-label-caps text-[10px] tracking-[0.2em] text-on-surface uppercase"
 						>SvelteKit</span
-					>
+					> -->
 				</div>
 			</article>
-			<article class="group cursor-pointer md:col-span-4 md:mt-24">
+			<!-- <article class="group cursor-pointer md:col-span-4 md:mt-24">
 				<div class="glass-panel relative mb-6 aspect-[3/4] overflow-hidden rounded-2xl">
 					<img
 						class="portfolio-card-img h-full w-full object-cover grayscale transition-all duration-700 hover:grayscale-0"
@@ -124,7 +127,7 @@
 						>
 					</div>
 				</div>
-			</article>
+			</article> -->
 		</div>
 	</section>
 </main>
