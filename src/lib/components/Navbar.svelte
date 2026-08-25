@@ -1,4 +1,5 @@
 <script>
+	import { page } from '$app/state';
 	import { resolve } from '$app/paths';
 	import logo_rm_bg from '$lib/assets/logo-removebg.png';
 
@@ -6,8 +7,15 @@
 
 	let menuOpen = $state(false);
 
+	const hash = $derived(page.url.hash);
+	const isHome = $derived(page.url.pathname === '/' && hash !== '#about' && hash !== '#contact');
+	const isAbout = $derived(page.url.pathname === '/' && hash === '#about');
+	const isWorks = $derived(page.url.pathname === '/allWorks');
+	const isContact = $derived(page.url.pathname === '/' && hash === '#contact');
+
 	const activeClass = 'border-primary text-primary border-b pb-1';
 	const inactiveClass = 'text-on-surface-variant hover:text-primary transition-colors duration-400';
+	const navClass = (active) => (active ? activeClass : inactiveClass);
 </script>
 
 <nav
@@ -17,10 +25,32 @@
 		<img src={logo_rm_bg} alt="Logo" class="h-10 w-10" />
 	</div>
 	<ul class="hidden items-center gap-gutter md:flex">
-		<li><a class={activeClass} href={resolve('/')}>Home</a></li>
-		<li><a class={inactiveClass} href={resolve('/#about')}>About</a></li>
-		<li><a class={inactiveClass} href={resolve('/allWorks')}>Works</a></li>
-		<li><a class={inactiveClass} href={resolve('/#contact')}>Contact</a></li>
+		<li>
+			<a class={navClass(isHome)} href={resolve('/')} aria-current={isHome ? 'page' : undefined}
+				>Home</a
+			>
+		</li>
+		<li>
+			<a
+				class={navClass(isAbout)}
+				href={resolve('/#about')}
+				aria-current={isAbout ? 'page' : undefined}>About</a
+			>
+		</li>
+		<li>
+			<a
+				class={navClass(isWorks)}
+				href={resolve('/allWorks')}
+				aria-current={isWorks ? 'page' : undefined}>Works</a
+			>
+		</li>
+		<li>
+			<a
+				class={navClass(isContact)}
+				href={resolve('/#contact')}
+				aria-current={isContact ? 'page' : undefined}>Contact</a
+			>
+		</li>
 	</ul>
 	<div class="flex items-center gap-4">
 		<button
@@ -44,21 +74,35 @@
 	<div class="glass-panel fixed top-24 right-4 z-50 rounded-2xl p-6 md:hidden">
 		<ul class="flex flex-col gap-4 font-label-caps text-label-caps">
 			<li>
-				<a class={activeClass} href={resolve('/')} onclick={() => (menuOpen = false)}>Home</a>
-			</li>
-			<li>
-				<a class={inactiveClass} href={resolve('/#about')} onclick={() => (menuOpen = false)}
-					>About</a
+				<a
+					class={navClass(isHome)}
+					href={resolve('/')}
+					aria-current={isHome ? 'page' : undefined}
+					onclick={() => (menuOpen = false)}>Home</a
 				>
 			</li>
 			<li>
-				<a class={inactiveClass} href={resolve('/allWorks')} onclick={() => (menuOpen = false)}
-					>Works</a
+				<a
+					class={navClass(isAbout)}
+					href={resolve('/#about')}
+					aria-current={isAbout ? 'page' : undefined}
+					onclick={() => (menuOpen = false)}>About</a
 				>
 			</li>
 			<li>
-				<a class={inactiveClass} href={resolve('/#contact')} onclick={() => (menuOpen = false)}
-					>Contact</a
+				<a
+					class={navClass(isWorks)}
+					href={resolve('/allWorks')}
+					aria-current={isWorks ? 'page' : undefined}
+					onclick={() => (menuOpen = false)}>Works</a
+				>
+			</li>
+			<li>
+				<a
+					class={navClass(isContact)}
+					href={resolve('/#contact')}
+					aria-current={isContact ? 'page' : undefined}
+					onclick={() => (menuOpen = false)}>Contact</a
 				>
 			</li>
 			<li>
