@@ -1,3 +1,6 @@
+<script>
+	import skmRMUTL from '$lib/assets/skillMappingRMUTL.png'
+</script>
 <main class="pt-[140px] md:pt-[180px]">
 	<div
 		class="mx-auto w-full max-w-container-max px-margin-mobile pb-section-gap md:px-margin-desktop"
@@ -7,11 +10,10 @@
 			<h1
 				class="mb-6 font-display-lg-mobile text-display-lg-mobile text-primary md:font-display-lg md:text-display-lg"
 			>
-				Selected Works
+				Chanodom Ongkulna
 			</h1>
 			<p class="max-w-2xl font-body-lg text-body-lg text-on-surface-variant">
-				A curated collection of digital experiences, blending architectural precision with editorial
-				elegance.
+				This is a piece of work I've done and am proud to present.
 			</p>
 		</header>
 
@@ -25,7 +27,7 @@
 					<img
 						class="portfolio-card-img h-full w-full object-cover grayscale transition-all duration-700 hover:grayscale-0"
 						alt="A high-fashion editorial website design mock-up for Vogue Atelier, minimal with black marble textures, crisp white serif typography, and high-contrast photography."
-						src="https://lh3.googleusercontent.com/aida-public/AB6AXuDylHT4crqPtomVn3usc5xq64dGgNwVhljiQBzJLCc7nUE5O6hxQivQPwc6B24qGhfIX7N0nkvjYOdcMXgTZuTADM4KXq9sFd3pPIAtWRSCcT-jZX2Ey57J0YTVHAqUGoITIuS89KeXtg5a-2lruVa_zn3Ux5p5y2CB5Ds-Sw8_gC91dRc3pizBgSxhNEtClsr17_wMkVZI8uXBV3Ifk3OO2o9fpoTktC2LEFkcHaIWhkscnAJ0biFb5Q"
+						src={skmRMUTL}
 					/>
 				</div>
 				<div class="flex flex-grow flex-col justify-between p-8">
@@ -58,7 +60,7 @@
 			</article>
 
 			<!-- Project 2 (Small Span) -->
-			<article
+			<!-- <article
 				class="glass-panel group flex cursor-pointer flex-col overflow-hidden rounded-2xl md:col-span-4"
 			>
 				<div class="relative h-64 w-full overflow-hidden md:h-[300px]">
@@ -92,8 +94,6 @@
 					</div>
 				</div>
 			</article>
-
-			<!-- Project 3 (Small Span) -->
 			<article
 				class="glass-panel group flex cursor-pointer flex-col overflow-hidden rounded-2xl md:col-span-5"
 			>
@@ -129,7 +129,7 @@
 				</div>
 			</article>
 
-			<!-- Project 4 (Large Span) -->
+			
 			<article
 				class="glass-panel group flex cursor-pointer flex-col overflow-hidden rounded-2xl md:col-span-7"
 			>
@@ -167,7 +167,7 @@
 						>
 					</div>
 				</div>
-			</article>
+			</article> -->
 		</div>
 	</div>
 </main>
