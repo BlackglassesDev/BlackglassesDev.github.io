@@ -18,9 +18,9 @@
 	</div>
 	<ul class="hidden items-center gap-gutter md:flex">
 		<li><a class={activeClass} href={resolve('/')}>Home</a></li>
-		<li><a class={inactiveClass} href="/#about">About</a></li>
-		<li><a class={inactiveClass} href="/allWorks">Works</a></li>
-		<li><a class={inactiveClass} href="/#contact">Contact</a></li>
+		<li><a class={inactiveClass} href={resolve('/#about')}>About</a></li>
+		<li><a class={inactiveClass} href={resolve('/allWorks')}>Works</a></li>
+		<li><a class={inactiveClass} href={resolve('/#contact')}>Contact</a></li>
 	</ul>
 	<div class="flex items-center gap-4">
 		<button
@@ -47,13 +47,19 @@
 				<a class={activeClass} href={resolve('/')} onclick={() => (menuOpen = false)}>Home</a>
 			</li>
 			<li>
-				<a class={inactiveClass} href="/#about" onclick={() => (menuOpen = false)}>About</a>
+				<a class={inactiveClass} href={resolve('/#about')} onclick={() => (menuOpen = false)}
+					>About</a
+				>
 			</li>
 			<li>
-				<a class={inactiveClass} href="/allWorks" onclick={() => (menuOpen = false)}>Works</a>
+				<a class={inactiveClass} href={resolve('/allWorks')} onclick={() => (menuOpen = false)}
+					>Works</a
+				>
 			</li>
 			<li>
-				<a class={inactiveClass} href="/#contact" onclick={() => (menuOpen = false)}>Contact</a>
+				<a class={inactiveClass} href={resolve('/#contact')} onclick={() => (menuOpen = false)}
+					>Contact</a
+				>
 			</li>
 			<li>
 				<button

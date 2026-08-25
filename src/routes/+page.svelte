@@ -1,6 +1,8 @@
 <script>
-	import RMUTLSkillMapping from "../lib/assets/skillMappingRMUTL.png";
+	import { resolve } from '$app/paths';
+	import RMUTLSkillMapping from '../lib/assets/skillMappingRMUTL.png';
 </script>
+
 <main class="pt-[80px] md:pt-[10px]">
 	<section
 		id="about"
@@ -20,7 +22,9 @@
 				with new technology while highlighting my favorite projects and providing a place to
 				connect. Feel free to explore my work.
 			</p>
-			<p class="text-xl mb-12 font-light text-surface-tint italic md:text-xl">Code Name: BlackglassesDev</p>
+			<p class="mb-12 text-xl font-light text-surface-tint italic md:text-xl">
+				Code Name: BlackglassesDev
+			</p>
 			<div class="flex flex-col items-start gap-6 sm:flex-row sm:items-center">
 				<a
 					class="inline-flex items-center justify-center rounded-full border border-transparent bg-[#E5E4E2] px-8 py-4 font-label-caps text-label-caps font-bold tracking-[0.2em] text-[#050505] uppercase transition-all duration-400 hover:border-[#E5E4E2] hover:bg-transparent hover:text-[#E5E4E2]"
@@ -53,10 +57,9 @@
 	>
 		<div class="mb-16 flex items-end justify-between border-b border-white/10 pb-8">
 			<h2 class="font-headline-md text-headline-md text-primary">Featured Works</h2>
-			<!-- svelte-ignore a11y_invalid_attribute -->
 			<a
 				class="hidden items-center gap-2 rounded-full px-4 py-2 font-label-caps text-label-caps tracking-[0.2em] text-on-surface-variant uppercase transition-colors duration-400 hover:bg-white/5 hover:text-primary md:inline-flex"
-				href="/allWorks"
+				href={resolve('/allWorks')}
 			>
 				All Projects <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
 			</a>
@@ -67,7 +70,7 @@
 					<img
 						class="portfolio-card-img h-full w-full object-cover grayscale transition-all duration-700 hover:grayscale-0"
 						alt="img project RMUTL-SkillMapping."
-						src="{RMUTLSkillMapping}"
+						src={RMUTLSkillMapping}
 					/>
 				</div>
 				<div class="flex items-start justify-between">
