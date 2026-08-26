@@ -1,5 +1,6 @@
 <script>
 	import skmRMUTL from '$lib/assets/skillMappingRMUTL.png'
+	import logo_bg from '$lib/assets/logo-removebg.png'
 </script>
 <main class="pt-[140px] md:pt-[180px]">
 	<div
@@ -26,7 +27,7 @@
 				<div class="relative h-80 w-full overflow-hidden md:h-[500px]">
 					<img
 						class="portfolio-card-img h-full w-full object-cover grayscale transition-all duration-700 hover:grayscale-0"
-						alt="A high-fashion editorial website design mock-up for Vogue Atelier, minimal with black marble textures, crisp white serif typography, and high-contrast photography."
+						alt="img project RMUTL-SkillMapping."
 						src={skmRMUTL}
 					/>
 				</div>
@@ -35,11 +36,10 @@
 						<h2
 							class="mb-4 font-headline-md text-headline-md text-primary transition-all group-hover:text-glow-silver"
 						>
-							Vogue Atelier
+							RMUTL-SkillMapping
 						</h2>
 						<p class="mb-6 line-clamp-2 font-body-md text-on-surface-variant">
-							An immersive digital showroom for a luxury fashion house, featuring WebGL-powered
-							garment exploration and a fluid, editorial layout.
+							Project skill mapping.
 						</p>
 					</div>
 					<div class="mt-4 flex flex-wrap gap-2">
@@ -49,25 +49,33 @@
 						>
 						<span
 							class="inline-block rounded-full border border-white/20 bg-[#050505] px-4 py-1.5 font-label-caps text-[10px] tracking-[0.2em] text-on-surface uppercase"
-							>Three.js</span
+							>Node.js</span
 						>
 						<span
 							class="inline-block rounded-full border border-white/20 bg-[#050505] px-4 py-1.5 font-label-caps text-[10px] tracking-[0.2em] text-on-surface uppercase"
 							>Tailwind CSS</span
+						>
+						<span
+							class="inline-block rounded-full border border-white/20 bg-[#050505] px-4 py-1.5 font-label-caps text-[10px] tracking-[0.2em] text-on-surface uppercase"
+							>Docker</span
+						>
+						<span
+							class="inline-block rounded-full border border-white/20 bg-[#050505] px-4 py-1.5 font-label-caps text-[10px] tracking-[0.2em] text-on-surface uppercase"
+							>Mysql</span
 						>
 					</div>
 				</div>
 			</article>
 
 			<!-- Project 2 (Small Span) -->
-			<!-- <article
+			<article
 				class="glass-panel group flex cursor-pointer flex-col overflow-hidden rounded-2xl md:col-span-4"
 			>
-				<div class="relative h-64 w-full overflow-hidden md:h-[300px]">
+				<div class="relative h-full w-full overflow-hidden md:h-[400px]">
 					<img
 						class="portfolio-card-img h-full w-full object-cover grayscale transition-all duration-700 hover:grayscale-0"
-						alt="An architectural visualization portfolio website for Aura Residencies, extremely clean dark mode with silver metallic accents and a brutalist concrete home render."
-						src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUhMk3OGcNTsqkIP9hu4BIqA9OnEmFxj-k6PUh9ZsKjs-KzuOCtgrwo6yGbYd-MuLqLET02dPafazOdmmlgIzVNVrXxeODCEVp27psdZXoZz553rUq4byhMh05C-6MpCZUmDGBwxuioinXcn7UUu_ZyV_4S1UhEyExd9YYICMYhTW2x8rfZo0fqptHG2WU4DIq6goXPELF1dXtBvneX_OM_v1CCO3rVXOCg4VSVdDbcdQU_YE4msPRbQ"
+						alt="logo BlackglassesDev"
+						src={logo_bg}
 					/>
 				</div>
 				<div class="flex flex-grow flex-col justify-between p-6">
@@ -75,26 +83,24 @@
 						<h2
 							class="mb-3 font-headline-sm text-headline-sm text-primary transition-all group-hover:text-glow-silver"
 						>
-							Aura Residencies
+							Coming soon...
 						</h2>
 						<p class="mb-6 line-clamp-3 font-body-md text-on-surface-variant">
-							A bespoke real estate platform showcasing ultra-luxury brutalist properties with
-							interactive floor plans.
-						</p>
+							Nothing yet.
 					</div>
 					<div class="mt-4 flex flex-wrap gap-2">
 						<span
 							class="inline-block rounded-full border border-white/20 bg-[#050505] px-4 py-1.5 font-label-caps text-[10px] tracking-[0.2em] text-on-surface uppercase"
-							>React</span
+							>NULL</span
 						>
 						<span
 							class="inline-block rounded-full border border-white/20 bg-[#050505] px-4 py-1.5 font-label-caps text-[10px] tracking-[0.2em] text-on-surface uppercase"
-							>Framer Motion</span
+							>NULL</span
 						>
 					</div>
 				</div>
 			</article>
-			<article
+			<!-- <article
 				class="glass-panel group flex cursor-pointer flex-col overflow-hidden rounded-2xl md:col-span-5"
 			>
 				<div class="relative h-64 w-full overflow-hidden md:h-[350px]">
