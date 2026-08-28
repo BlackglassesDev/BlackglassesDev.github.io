@@ -53,7 +53,7 @@
 @layer base {
 	body {
 		background-color: #050505;
-		background-image: url('https://lh3.googleusercontent.com/aida/AEtjO1XmzV_-BZEpHCYRghY470DKT-OKA3u9p376YBHBZewbjNh81qpL6FdVXTn9uyTA4QEmIbkN2ja7U5QsjKTy_gUDPGN9JwXCx_0CkbEcEH129wqCH3a0ohlHU7OVjqed1TpLFCK75DnBv9Kp-F9MlF4dvYM0DGHcV5CQKGwQ-QVtw0FEgwWV-NKDM9TjzbEVH8Gfa3BfM2CBN1D8GHdK32Aep_pxEeBhpLC9o4EwQuYsMRIG6XSS_gH-DbLc');
+		background-image: url('../lib/assets/luxury_BgGit.png');
 		background-blend-mode: overlay;
 		background-size: cover;
 		background-attachment: fixed;
