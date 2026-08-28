@@ -1,7 +1,8 @@
 <script>
-	import skmRMUTL from '$lib/assets/skillMappingRMUTL.png'
-	import logo_bg from '$lib/assets/logo-removebg.png'
+	import skmRMUTL from '$lib/assets/skillMappingRMUTL.png';
+	import logo_bg from '$lib/assets/logo-removebg.png';
 </script>
+
 <main class="pt-[140px] md:pt-[180px]">
 	<div
 		class="mx-auto w-full max-w-container-max px-margin-mobile pb-section-gap md:px-margin-desktop"
@@ -26,7 +27,7 @@
 			>
 				<div class="relative h-80 w-full overflow-hidden md:h-[500px]">
 					<img
-						class="portfolio-card-img h-full w-full object-cover grayscale transition-all duration-700 hover:grayscale-0"
+						class="portfolio-card-img h-full w-full object-cover"
 						alt="img project RMUTL-SkillMapping."
 						src={skmRMUTL}
 					/>
@@ -85,8 +86,7 @@
 						>
 							Coming soon...
 						</h2>
-						<p class="mb-6 line-clamp-3 font-body-md text-on-surface-variant">
-							Nothing yet.
+						<p class="mb-6 line-clamp-3 font-body-md text-on-surface-variant">Nothing yet.</p>
 					</div>
 					<div class="mt-4 flex flex-wrap gap-2">
 						<span

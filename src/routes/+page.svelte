@@ -68,7 +68,7 @@
 			<article class="group md:col-span-8">
 				<div class="glass-panel relative mb-6 aspect-[16/9] overflow-hidden rounded-2xl">
 					<img
-						class="portfolio-card-img h-full w-full object-cover grayscale transition-all duration-700 hover:grayscale-0"
+						class="portfolio-card-img h-full w-full object-cover"
 						alt="img project RMUTL-SkillMapping."
 						src={RMUTLSkillMapping}
 					/>
