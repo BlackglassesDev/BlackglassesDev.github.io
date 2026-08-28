@@ -23,7 +23,7 @@
 				connect. Feel free to explore my work.
 			</p>
 			<p class="mb-12 text-xl font-light text-surface-tint italic md:text-xl">
-				Code Name: BlackglassesDev
+				Code Name: Blackglasses
 			</p>
 			<div class="flex flex-col items-start gap-6 sm:flex-row sm:items-center">
 				<a
